@@ -1,1 +1,1 @@
-web: gunicorn MusicRecomendation.wsgi --log-file
+web: gunicorn MusicRecomendation.wsgi --log-file -

@@ -1,1 +1,1 @@
-gunicorn MusicRecomendation.wsgi
+web: gunicorn 'MusicRecomendation.wsgi'

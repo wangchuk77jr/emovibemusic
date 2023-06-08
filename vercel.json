@@ -2,24 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "gunicorn -w 4 -k uvicorn.workers.UvicornWorker {
-  "version": 2,
-  "builds": [
-    {
       "src": "gunicorn -w 4 -k uvicorn.workers.UvicornWorker MusicRecomendation.asgi:application",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "MusicRecomendation.asgi:application" }
-  ],
-  "env": {
-    "PYTHONUNBUFFERED": "1",
-    "DJANGO_SETTINGS_MODULE": "MusicRecomendation.settings"
-  }
-}
-.asgi:application",
       "use": "@vercel/python"
     }
   ],
